@@ -1,0 +1,1 @@
+SELECT jobs.JOB_TITLE, employees.FIRST_NAME, employees.SALARY- jobs.MIN_SALARY  FROM employees NATURAL JOIN jobs;
