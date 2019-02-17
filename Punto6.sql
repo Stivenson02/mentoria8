@@ -1,3 +1,7 @@
-SELECT COUNT(employees.EMPLOYEE_ID), employees.FIRST_NAME , departments.DEPARTMENT_NAME
-  FROM employees, departments
- GROUP BY employees.FIRST_NAME
+SELECT departments.DEPARTMENT_NAME, 
+COUNT(*)  
+FROM departments 
+INNER JOIN employees 
+ON employees.DEPARTMENT_ID = departments.DEPARTMENT_ID 
+GROUP BY departments.department_id, department_name 
+ORDER BY department_name;

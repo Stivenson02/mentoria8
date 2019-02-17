@@ -1,2 +1,2 @@
-SELECT * FROM locations WHERE locations.LOCATION_ID IN (
-SELECT departments.DEPARTMENT_ID FROM departments);
+SELECT locations.LOCATION_ID,locations.STREET_ADDRESS, locations.CITY, locations.STATE_PROVINCE, countries.COUNTRY_NAME
+FROM locations NATURAL JOIN countries;

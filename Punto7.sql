@@ -1,1 +1,3 @@
-SELECT DATEDIFF( job_history.START_DATE, job_history.END_DATE), employees.FIRST_NAME, employees.EMPLOYEE_ID, jobs.JOB_TITLE FROM employees, jobs, job_history WHERE job_history.DEPARTMENT_ID = 90;
+SELECT job_history.EMPLOYEE_ID, jobs.JOB_TITLE, job_history.END_DATE - job_history.START_DATE Days FROM job_history 
+NATURAL JOIN jobs 
+WHERE job_history.DEPARTMENT_ID=90;
