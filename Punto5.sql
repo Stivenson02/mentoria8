@@ -1,0 +1,1 @@
+SELECT * FROM employees WHERE employees.HIRE_DATE > (SELECT employees.HIRE_DATE FROM employees WHERE employees.LAST_NAME = 'Jones')

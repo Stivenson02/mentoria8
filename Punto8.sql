@@ -1,0 +1,1 @@
+SELECT departments.DEPARTMENT_ID, departments.DEPARTMENT_NAME, employees.FIRST_NAME, jobs.JOB_ID FROM departments, employees, jobs WHERE jobs.JOB_ID IN ('FI_MGR', 'AC_MGR', 'PU_MAN', 'MK_MAN')

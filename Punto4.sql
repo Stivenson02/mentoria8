@@ -1,0 +1,1 @@
+SELECT employees.FIRST_NAME, employees.FIRST_NAME FROM employees WHERE employees.MANAGER_ID IN (SELECT employees.EMPLOYEE_ID FROM employees) 

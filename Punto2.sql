@@ -1,0 +1,1 @@
+SELECT employees.FIRST_NAME, employees.LAST_NAME, departments.DEPARTMENT_NAME  FROM employees, departments 
